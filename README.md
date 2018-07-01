@@ -18,7 +18,7 @@ Add this in your build.gradle
 implementation 'com.mindorks.scheduler:rxps:0.0.1'
 ```
 
-### Setting low level priority for a task - use RxPS.low()
+### Setting low level priority for a task - use `RxPS.low()`
 ```java
 getObservable()
 .subscribeOn(RxPS.low())
@@ -31,7 +31,7 @@ getObservable()
 .subscribe(getObserver());
 ```
 
-### Setting medium level priority for a task - use RxPS.medium()
+### Setting medium level priority for a task - use `RxPS.medium()`
 ```java
 getObservable()
 .subscribeOn(RxPS.medium())
@@ -44,7 +44,7 @@ getObservable()
 .subscribe(getObserver());
 ```
 
-### Setting high level priority for a task - use RxPS.high()
+### Setting high level priority for a task - use `RxPS.high()`
 ```java
 getObservable()
 .subscribeOn(RxPS.high())
@@ -57,7 +57,7 @@ getObservable()
 .subscribe(getObserver());
 ```
 
-### Setting immediate level priority for a task - use RxPS.immediate()
+### Setting immediate level priority for a task - use `RxPS.immediate()`
 ```java
 getObservable()
 .subscribeOn(RxPS.immediate())
