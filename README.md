@@ -15,7 +15,7 @@
 
 Add this in your build.gradle
 ```groovy
-implementation 'com.mindorks.scheduler:rxps:0.0.1'
+implementation 'com.mindorks.scheduler:rxps:0.1.0'
 ```
 
 ### Setting low level priority for a task - use `RxPS.low()`
