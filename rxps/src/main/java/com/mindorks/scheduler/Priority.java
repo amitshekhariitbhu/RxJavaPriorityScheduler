@@ -1,4 +1,4 @@
-package com.mindorks;
+package com.mindorks.scheduler;
 
 public enum Priority {
 

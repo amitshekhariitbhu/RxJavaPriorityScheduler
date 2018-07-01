@@ -1,1 +1,1 @@
-include ':app', ':priorityscheduler'
+include ':app', ':rxps'
