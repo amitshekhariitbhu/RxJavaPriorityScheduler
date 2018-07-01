@@ -34,7 +34,7 @@ public enum Priority {
     HIGH,
 
     /**
-     * Highest priority level.
+     * Immediate priority level.
      */
     IMMEDIATE
 
