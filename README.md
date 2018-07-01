@@ -9,7 +9,7 @@
 
 ### Overview of RxPS - RxJavaPriorityScheduler library
 * RxPS is used to set the priority for the given task.
-* Easy way to set the priority for the given task.
+* Simple way to set the priority for the given task.
 
 ## Using RxPS - RxJavaPriorityScheduler Library in your Android application
 
