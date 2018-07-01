@@ -7,7 +7,73 @@
 [![Mindorks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+### Overview of RxPS - RxJavaPriorityScheduler library
+* RxPS is used to set the priority for the given task.
+* Easy way to set the priority for the given task.
 
+## Using RxPS - RxJavaPriorityScheduler Library in your Android application
+
+Add this in your build.gradle
+```groovy
+implementation 'com.mindorks.scheduler:rxps:0.0.1'
+```
+
+### Setting low level priority for a task - use RxPS.low()
+```java
+getObservable()
+.subscribeOn(RxPS.low())
+.subscribe(getObserver());
+
+// or
+
+getObservable()
+.subscribeOn(RxPS.get(Priority.LOW))
+.subscribe(getObserver());
+```
+
+### Setting medium level priority for a task - use RxPS.medium()
+```java
+getObservable()
+.subscribeOn(RxPS.medium())
+.subscribe(getObserver());
+
+// or
+
+getObservable()
+.subscribeOn(RxPS.get(Priority.MEDIUM))
+.subscribe(getObserver());
+```
+
+### Setting high level priority for a task - use RxPS.high()
+```java
+getObservable()
+.subscribeOn(RxPS.high())
+.subscribe(getObserver());
+
+// or
+
+getObservable()
+.subscribeOn(RxPS.get(Priority.HIGH))
+.subscribe(getObserver());
+```
+
+### Setting immediate level priority for a task - use RxPS.immediate()
+```java
+getObservable()
+.subscribeOn(RxPS.immediate())
+.subscribe(getObserver());
+
+// or
+
+getObservable()
+.subscribeOn(RxPS.get(Priority.IMMEDIATE))
+.subscribe(getObserver());
+```
+
+## If this library helps you in anyway, show your love :heart: by putting a :star: on this project :v:
+
+[Check out Mindorks awesome open source projects here](https://mindorks.com/open-source-projects)
+  
 ### License
 ```
     Copyright (C) 2018 MINDORKS NEXTGEN PRIVATE LIMITED
@@ -24,3 +90,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 ```
+
+### Contributing to RxPS - RxJavaPriorityScheduler
+All pull requests are welcome, make sure to follow the [contribution guidelines](CONTRIBUTING.md)
+when you submit pull request.
