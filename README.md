@@ -12,9 +12,24 @@
 
 ## Using RxPS - RxJavaPriorityScheduler Library in your Android application
 
-Add this in your build.gradle
+Add this in your `settings.gradle`:
 ```groovy
-implementation 'com.mindorks.scheduler:rxps:0.1.0'
+maven { url 'https://jitpack.io' }
+```
+
+If you are using `settings.gradle.kts`, add the following:
+```kotlin
+maven { setUrl("https://jitpack.io") }
+```
+
+Add this in your `build.gradle`
+```groovy
+implementation 'com.github.amitshekhariitbhu:RxJavaPriorityScheduler:1.0.0'
+```
+
+If you are using `build.gradle.kts`, add the following:
+```kotlin
+implementation("com.github.amitshekhariitbhu:RxJavaPriorityScheduler:1.0.0")
 ```
 
 ### Setting low level priority for a task - use `RxPS.low()`
